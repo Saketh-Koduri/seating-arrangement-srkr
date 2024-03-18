@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url('https://app.samscrm.co.uk/new_login/img/login_back2.jpg') center/cover no-repeat;
+    }
+
+    .container {
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      text-align: center;
+      font-family:  'Bellada';
+    }
+
+    label {
+      margin-top: 10px;
+      font-family: ' Raleway';
+        }
+
+    input, textarea {
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #cecdcd;
+      border-radius: 4px;
+      background-color: transparent; /* Set the background color of the input or textarea with transparency */
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="signup-form" onsubmit="return redirectForm()">
+      <h2>Teacher Sign Up</h2>
+      
+      <b><label for="firstName">First Name:</label></b>
+      <input type="text" id="firstName" name="firstName" required>
+      
+      <b><label for="lastName">Last Name:</label></b>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <b><label for="Teacher ID">Teacher ID:</label></b>
+      <input type="text" id="Teacher ID" name="Teacher" required>
+      
+      <b><label for="email">Email:</label></b>
+      <input type="email" id="email" name="email" required>
+      
+      <b><label for="password">Password:</label></b>
+      <input type="password" id="password" name="password" required>
+      
+     <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <script>
+  function redirectForm()
+  {
+	  window.location.href="Teacherlogin.html";
+	  return false;
+  }
+  </script>
+</body>
+</html>
